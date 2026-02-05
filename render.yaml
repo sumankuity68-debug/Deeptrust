@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: deeptrust-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python run_system.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.13
